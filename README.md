@@ -1,11 +1,43 @@
-# Sample Snack app
+# Pokédex
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Aplicativo em React Native com Expo para pesquisar Pokémon pelo nome ou número e consultar informações básicas.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+## Funcionalidades
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+- Pesquisa por nome ou número da Pokédex.
+- Sugestões de busca com até 10 resultados.
+- Exibição do número, imagem, tipos, altura e peso do Pokémon selecionado.
+- Dados obtidos pela [PokéAPI](https://pokeapi.co/).
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+## Requisitos
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+- Node.js e npm.
+- Expo Go no celular para testar no dispositivo, ou um emulador Android/iOS.
+
+## Como executar
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o Expo:
+
+```bash
+npm run start
+```
+
+Escaneie o QR code com o Expo Go ou use os atalhos exibidos no terminal. Também é possível iniciar diretamente com:
+
+```bash
+npm run android
+npm run ios
+npm run web
+```
+
+No Windows PowerShell, se a política de execução bloquear `npm.ps1`, use `npm.cmd install` e `npm.cmd run start`.
+
+## API
+
+A aplicação consulta a [PokéAPI](https://pokeapi.co/api/v2/), portanto é necessária uma conexão com a internet para carregar a lista e os detalhes dos Pokémon.
